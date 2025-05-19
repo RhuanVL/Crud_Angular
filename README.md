@@ -20,7 +20,7 @@ Criar a base de dados:
 
 Create Database ProdutoDB;
 
-User produtodb;
+Use produtodb;
 
 CREATE TABLE Produtos (
     id INT PRIMARY KEY AUTO_INCREMENT,
