@@ -4,13 +4,13 @@ Desafio de realizar um crud com asp.net e angular.
 
 Requisitos para clonar e testar:
 
-Xamp -> Mysql
-Workbench (a escolher)
-C# Asp Net
-Node v.22
-Angular v.19
-Swagger
-Entity Framework
+Xamp -> Mysql,
+Workbench (a escolher),
+C# Asp Net,
+Node v.22,
+Angular v.19,
+Swagger,
+Entity Framework,
 
 Criar a base de dados:
 
