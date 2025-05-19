@@ -1,6 +1,36 @@
 <<<<<<< HEAD
 # Desafio_Crud_Angular
 Desafio de realizar um crud com asp.net e angular.
+
+Requisitos para clonar e testar:
+
+Xamp -> Mysql
+Workbench (a escolher)
+C# Asp Net
+Node v.22
+Angular v.19
+Swagger
+Entity Framework
+
+Criar a base de dados:
+
+1 - Habilitar o serviço Mysql
+
+2- Criação da base
+
+Create Database ProdutoDB;
+
+User produtodb;
+
+CREATE TABLE Produtos (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(255) NOT NULL,
+    preco DECIMAL(10,2) NOT NULL,
+    quantidade INT NOT NULL
+);
+
+Select * from Produtos;
+
 =======
 # AngularAspCrud
 
