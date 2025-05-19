@@ -1,0 +1,41 @@
+<div class="container mt-5">
+    <div class="border p-2 text-center bg-light">
+      <h2 class="fw-bold">Lista de Produtos</h2>
+       <button class="btn btn-success border p-2 w-100 fw-bold" [routerLink]="['/cadastro']" routerLinkActive="router-link-active">
+        Cadastrar
+      </button>
+      <table class="table table-hover table-bordered">
+      <thead class="table-dark">
+        <tr>
+          <th>Id</th>
+          <th>Nome</th>
+          <th>Preço</th>
+          <th>Quantidade</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+       @if (produtos !== null) {
+      <tbody>
+        @for (produto of produtos; track produto.id) {
+          <tr>
+            <td>{{ produto.id }}</td>
+            <td>{{ produto.nome }}</td>
+            <td>{{ produto.preco | currency:'BRL':'symbol':'1.2-2' }}</td>
+            <td>{{ produto.quantidade}}</td>
+            <td>
+
+              <button class="btn btn-warning mx-2" [routerLink]="['/editar', produto.id]">Editar</button>
+              <button class="btn btn-danger mx-2" (click)="deletar(produto.id)">Excluir</button>
+            </td>
+          </tr>
+        } @empty {
+          <tr>
+            <td colspan="4" class="text-center">Nenhum produto encontrado</td>
+          </tr>
+        }
+      </tbody>
+       }
+    </table>
+    </div>
+
+</div>
